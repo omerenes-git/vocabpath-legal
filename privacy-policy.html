@@ -48,13 +48,14 @@
   <p>Collected data is used solely to provide personalized language learning content (German, English, Spanish, Italian, Serbian), sync your progress across devices, and improve the app experience. Your data is <strong>never sold</strong> to third parties.</p>
 
   <h2>3. AI Processing and Third-Party Processors</h2>
-  <p>Writing, speaking and reading practice is processed through AI providers (DeepSeek / OpenAI-compatible services) via Supabase Edge Functions. Your practice content is transmitted to these providers to generate evaluations.</p>
+  <p>Writing, speaking and reading practice is processed through AI providers via Supabase Edge Functions. The active provider is the <strong>Google Gemini API</strong> (accessed through an OpenAI-compatible endpoint; the provider is configurable server-side). Your practice content is transmitted to this provider only to generate evaluations.</p>
   <p>Infrastructure providers:</p>
   <ul>
-    <li><strong>Google</strong> — optional sign-in provider (Google OAuth); only identity data (name, email, profile photo) is used (<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>)</li>
+    <li><strong>Google</strong> — optional sign-in provider (Google OAuth) and AI language evaluation (Gemini API); only identity data (name, email, profile photo) and the practice text needed for an evaluation are used (<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>)</li>
     <li><strong>Supabase</strong> — database, authentication, edge functions (<a href="https://supabase.com/privacy">supabase.com/privacy</a>)</li>
     <li><strong>RevenueCat</strong> — subscription management (<a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>)</li>
     <li><strong>Sentry</strong> — error monitoring (<a href="https://sentry.io/privacy">sentry.io/privacy</a>)</li>
+    <li><strong>PostHog (EU Cloud)</strong> — product analytics; pseudonymous usage events only (screens used, feature flags) — no free-text content, no personal identifiers (<a href="https://posthog.com/privacy">posthog.com/privacy</a>)</li>
   </ul>
   <p>These processors handle only the data required to operate the service.</p>
 
@@ -90,13 +91,14 @@
   <p>Toplanan veriler yalnızca kişiselleştirilmiş dil öğrenme içeriği (Almanca, İngilizce, İspanyolca, İtalyanca, Sırpça) sunmak, ilerlemenizi cihazlar arasında eşitlemek ve uygulama deneyimini iyileştirmek için kullanılır. Verileriniz üçüncü taraflara <strong>asla satılmaz</strong>.</p>
 
   <h2>3. Yapay Zeka İşlemleri ve Üçüncü Taraf İşleyiciler</h2>
-  <p>Yazma, konuşma ve okuma pratikleri, yapay zeka sağlayıcıları (DeepSeek / OpenAI uyumlu servisler) aracılığıyla Supabase Edge Functions üzerinden işlenir. Pratik içerikleriniz değerlendirme üretmek için bu sağlayıcılara iletilir.</p>
+  <p>Yazma, konuşma ve okuma pratikleri, Supabase Edge Functions üzerinden yapay zeka sağlayıcıları ile işlenir. Etkin sağlayıcı <strong>Google Gemini API</strong>'dir (OpenAI uyumlu uç nokta üzerinden erişilir; sağlayıcı sunucu tarafında yapılandırılabilir). Pratik içerikleriniz yalnızca değerlendirme üretmek için bu sağlayıcıya iletilir.</p>
   <p>Altyapı sağlayıcıları:</p>
   <ul>
-    <li><strong>Google</strong> — isteğe bağlı giriş sağlayıcısı (Google OAuth); yalnızca kimlik verisi (ad, e-posta, profil fotoğrafı) kullanılır (<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>)</li>
+    <li><strong>Google</strong> — isteğe bağlı giriş sağlayıcısı (Google OAuth) ve yapay zeka değerlendirmesi (Gemini API); yalnızca kimlik verisi (ad, e-posta, profil fotoğrafı) ve değerlendirme için gereken pratik metni kullanılır (<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>)</li>
     <li><strong>Supabase</strong> — veritabanı, kimlik doğrulama, edge fonksiyonlar (<a href="https://supabase.com/privacy">supabase.com/privacy</a>)</li>
     <li><strong>RevenueCat</strong> — abonelik yönetimi (<a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>)</li>
     <li><strong>Sentry</strong> — hata izleme (<a href="https://sentry.io/privacy">sentry.io/privacy</a>)</li>
+    <li><strong>PostHog (EU Cloud)</strong> — ürün analitiği; yalnızca takma adlı kullanım olayları (açılan ekranlar, özellik bayrakları) — serbest metin içerik yok, kişisel kimlik yok (<a href="https://posthog.com/privacy">posthog.com/privacy</a>)</li>
   </ul>
   <p>Bu işleyiciler yalnızca hizmetin çalışması için gereken veriyi işler.</p>
 
