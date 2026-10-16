@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VocabPath 1.0.26 — Play sürüm notları (7 dil, tek tuşla kopyala)</title>
+<style>
+  :root { --bg:#FAF9F6; --ink:#1A1C1A; --soft:#6B6F6B; --line:#E3E0DA; --accent:#2F6B4F; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#141614; --ink:#F2F1EE; --soft:#9BA09B; --line:#2A2D2A; --accent:#7FC19B; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; padding:20px 16px 48px; background:var(--bg); color:var(--ink);
+         font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  h1 { font:600 20px/1.35 Georgia,"Times New Roman",serif; margin:0 0 6px; }
+  .sub { color:var(--soft); font-size:13px; margin:0 0 18px; }
+  .bar { display:flex; gap:10px; margin-bottom:18px; flex-wrap:wrap; }
+  .copy, .copyall { font:600 14px/1 inherit; padding:11px 16px; border-radius:999px; cursor:pointer;
+        border:1px solid var(--line); background:var(--bg); color:var(--ink); }
+  .copyall { border-color:var(--accent); color:var(--accent); }
+  .copy:active, .copyall:active { transform:scale(.97); }
+  .card { border:1px solid var(--line); border-radius:14px; padding:14px; margin-bottom:14px; }
+  header { display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:10px; }
+  .lang { font-weight:600; }
+  .tag { font-size:12px; color:var(--soft); }
+  .count { font-size:12px; color:var(--soft); margin-left:auto; }
+  pre { margin:0; padding:12px; border-radius:10px; background:rgba(127,127,127,.09);
+         white-space:pre-wrap; word-break:break-word; font:14px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace; }
+  .hint { margin:8px 0 0; font-size:12px; color:var(--soft); }
+  .hint.ok { color:var(--accent); font-weight:600; }
+</style>
+</head>
+<body>
+  <h1>VocabPath 1.0.26 — Play sürüm notları (7 dil, tek tuşla kopyala)</h1>
+  <p class="sub">7 arayüz dili · dil başına 500 karakter sınırı · düğmeye basınca o dilin bloğu (etiketleriyle) panoya alınır.</p>
+  <div class="bar"><button class="copyall" data-lang="ALL">Hepsini kopyala (7 dil)</button></div>
+  <section class="card">
+    <header>
+      <span class="lang">Türkçe</span>
+      <code class="tag">&lt;tr-TR&gt;</code>
+      <span class="count">449 / 500 krk</span>
+      <button class="copy" data-lang="tr-TR">Kopyala</button>
+    </header>
+    <pre id="t-tr-TR">&lt;tr-TR&gt;
+Haftalık plana kısa sınav adımı ve hata merdiveni geldi. 7 dilde.
+• Haftalık plan: Günlük çalışmaya 5 dakikalık sınav adımı eklendi
+• Hata merdiveni: Yanlış konular yeni bağlamlarda plana geri döner
+• Kalıp ustalığı: Gramer kalıpları artık ölçülüp tekrarlanıyor
+• Sınav hazırlığı: Sınav oturumu yenilendi; zayıf modüller öne alınıyor
+• Yazma değerlendirmesi: Daha hızlı ve tutarlı geri bildirim
+• Zengin deyim ve bağlam içerikleri, hata düzeltmeleri
+&lt;/tr-TR&gt;</pre>
+    <p class="hint" id="h-tr-TR">Dokun → panoya alınır</p>
+  </section>
+  <section class="card">
+    <header>
+      <span class="lang">İngilizce</span>
+      <code class="tag">&lt;en-US&gt;</code>
+      <span class="count">458 / 500 krk</span>
+      <button class="copy" data-lang="en-US">Kopyala</button>
+    </header>
+    <pre id="t-en-US">&lt;en-US&gt;
+A short exam step and mistake ladder joined the weekly plan. In 7 languages.
+• Weekly plan: 5-minute focused exam practice added to daily study
+• Mistake ladder: Past errors return to your plan in fresh contexts
+• Pattern mastery: Grammar patterns are now tracked and reviewed
+• Exam prep: Refreshed exam sessions; weaker modules take priority
+• Writing feedback: More consistent evaluations with lower latency
+• Expanded idiom and context content, bug fixes
+&lt;/en-US&gt;</pre>
+    <p class="hint" id="h-en-US">Dokun → panoya alınır</p>
+  </section>
+  <section class="card">
+    <header>
+      <span class="lang">İspanyolca</span>
+      <code class="tag">&lt;es-ES&gt;</code>
+      <span class="count">445 / 500 krk</span>
+      <button class="copy" data-lang="es-ES">Kopyala</button>
+    </header>
+    <pre id="t-es-ES">&lt;es-ES&gt;
+Paso de examen corto y escala de errores en el plan semanal. En 7 idiomas.
+• Plan semanal: nuevo paso de examen de 5 minutos al día
+• Aprende de errores: los fallos vuelven al plan en nuevos contextos
+• Dominio de patrones: las estructuras gramaticales se miden y repasan
+• Preparación de examen: sesión renovada; módulos débiles priorizados
+• Redacción: evaluación más rápida, coherente y precisa
+• Nuevas expresiones en contexto y correcciones
+&lt;/es-ES&gt;</pre>
+    <p class="hint" id="h-es-ES">Dokun → panoya alınır</p>
+  </section>
+  <section class="card">
+    <header>
+      <span class="lang">Rusça</span>
+      <code class="tag">&lt;ru-RU&gt;</code>
+      <span class="count">430 / 500 krk</span>
+      <button class="copy" data-lang="ru-RU">Kopyala</button>
+    </header>
+    <pre id="t-ru-RU">&lt;ru-RU&gt;
+Экзаменационный шаг и лестница ошибок в недельном плане. На 7 языках.
+• Недельный план: короткий 5-минутный шаг подготовки к экзамену
+• Лестница ошибок: сложные темы возвращаются в новом контексте
+• Конструкции: грамматические шаблоны отслеживаются и повторяются
+• Экзамен: обновлены сессии; слабые модули выходят на первый план
+• Письмо: более быстрая и согласованная оценка ответов
+• Новые идиомы и контексты, исправление ошибок
+&lt;/ru-RU&gt;</pre>
+    <p class="hint" id="h-ru-RU">Dokun → panoya alınır</p>
+  </section>
+  <section class="card">
+    <header>
+      <span class="lang">Portekizce</span>
+      <code class="tag">&lt;pt-BR&gt;</code>
+      <span class="count">446 / 500 krk</span>
+      <button class="copy" data-lang="pt-BR">Kopyala</button>
+    </header>
+    <pre id="t-pt-BR">&lt;pt-BR&gt;
+Passo de exame curto e escada de erros no plano semanal. Em 7 idiomas.
+• Plano semanal: novo passo de 5 minutos de exame no estudo diário
+• Escada de erros: falhas voltam ao seu plano em novos contextos
+• Domínio de padrões: estruturas gramaticais medidas e revistas
+• Preparação para exame: sessões renovadas; foco em módulos fracos
+• Redação: avaliação mais rápida, coerente e com menor espera
+• Mais expressões em contexto e correções de erros
+&lt;/pt-BR&gt;</pre>
+    <p class="hint" id="h-pt-BR">Dokun → panoya alınır</p>
+  </section>
+  <section class="card">
+    <header>
+      <span class="lang">Arapça</span>
+      <code class="tag">&lt;ar&gt;</code>
+      <span class="count">395 / 500 krk</span>
+      <button class="copy" data-lang="ar">Kopyala</button>
+    </header>
+    <pre id="t-ar">&lt;ar&gt;
+خطوة امتحان قصير وسلّم لتصحيح الأخطاء في الخطة الأسبوعية. بـ 7 لغات.
+• الخطة الأسبوعية: خطوة تدريب على الامتحان مدتها 5 دقائق يوميًا
+• التعلّم من الأخطاء: عودة الموضوعات الخاطئة في سياقات جديدة
+• إتقان الأنماط: تتبع القواعد النحوية ومراجعتها بانتظام
+• التحضير للامتحان: جلسات امتحان مرنة مع أولوية للوحدات الأضعف
+• تقييم الكتابة: استجابة أسرع وأكثر اتساقًا ودقة
+• محتوى سياقي جديد وإصلاح الأخطاء
+&lt;/ar&gt;</pre>
+    <p class="hint" id="h-ar">Dokun → panoya alınır</p>
+  </section>
+  <section class="card">
+    <header>
+      <span class="lang">Sırpça</span>
+      <code class="tag">&lt;sr-Latn&gt;</code>
+      <span class="count">454 / 500 krk</span>
+      <button class="copy" data-lang="sr-Latn">Kopyala</button>
+    </header>
+    <pre id="t-sr-Latn">&lt;sr-Latn&gt;
+Kratak ispitni korak i lestvica grešaka u nedeljnom planu. Na 7 jezika.
+• Nedeljni plan: dodat je petominutni ispitni korak u dnevno učenje
+• Lestvica grešaka: netačne teme vraćaju se u novim kontekstima
+• Osvajanje obrazaca: gramatički obrasci se prate i ponavljaju
+• Priprema za ispit: obnovljene sesije; slabiji moduli imaju prednost
+• Ocenjivanje pisanja: brže i doslednije povratne informacije
+• Proširen sadržaj idioma i konteksta, ispravke grešaka
+&lt;/sr-Latn&gt;</pre>
+    <p class="hint" id="h-sr-Latn">Dokun → panoya alınır</p>
+  </section>
+  <script>
+    const DATA = {"tr-TR": "<tr-TR>\nHaftalık plana kısa sınav adımı ve hata merdiveni geldi. 7 dilde.\n• Haftalık plan: Günlük çalışmaya 5 dakikalık sınav adımı eklendi\n• Hata merdiveni: Yanlış konular yeni bağlamlarda plana geri döner\n• Kalıp ustalığı: Gramer kalıpları artık ölçülüp tekrarlanıyor\n• Sınav hazırlığı: Sınav oturumu yenilendi; zayıf modüller öne alınıyor\n• Yazma değerlendirmesi: Daha hızlı ve tutarlı geri bildirim\n• Zengin deyim ve bağlam içerikleri, hata düzeltmeleri\n</tr-TR>", "en-US": "<en-US>\nA short exam step and mistake ladder joined the weekly plan. In 7 languages.\n• Weekly plan: 5-minute focused exam practice added to daily study\n• Mistake ladder: Past errors return to your plan in fresh contexts\n• Pattern mastery: Grammar patterns are now tracked and reviewed\n• Exam prep: Refreshed exam sessions; weaker modules take priority\n• Writing feedback: More consistent evaluations with lower latency\n• Expanded idiom and context content, bug fixes\n</en-US>", "es-ES": "<es-ES>\nPaso de examen corto y escala de errores en el plan semanal. En 7 idiomas.\n• Plan semanal: nuevo paso de examen de 5 minutos al día\n• Aprende de errores: los fallos vuelven al plan en nuevos contextos\n• Dominio de patrones: las estructuras gramaticales se miden y repasan\n• Preparación de examen: sesión renovada; módulos débiles priorizados\n• Redacción: evaluación más rápida, coherente y precisa\n• Nuevas expresiones en contexto y correcciones\n</es-ES>", "ru-RU": "<ru-RU>\nЭкзаменационный шаг и лестница ошибок в недельном плане. На 7 языках.\n• Недельный план: короткий 5-минутный шаг подготовки к экзамену\n• Лестница ошибок: сложные темы возвращаются в новом контексте\n• Конструкции: грамматические шаблоны отслеживаются и повторяются\n• Экзамен: обновлены сессии; слабые модули выходят на первый план\n• Письмо: более быстрая и согласованная оценка ответов\n• Новые идиомы и контексты, исправление ошибок\n</ru-RU>", "pt-BR": "<pt-BR>\nPasso de exame curto e escada de erros no plano semanal. Em 7 idiomas.\n• Plano semanal: novo passo de 5 minutos de exame no estudo diário\n• Escada de erros: falhas voltam ao seu plano em novos contextos\n• Domínio de padrões: estruturas gramaticais medidas e revistas\n• Preparação para exame: sessões renovadas; foco em módulos fracos\n• Redação: avaliação mais rápida, coerente e com menor espera\n• Mais expressões em contexto e correções de erros\n</pt-BR>", "ar": "<ar>\nخطوة امتحان قصير وسلّم لتصحيح الأخطاء في الخطة الأسبوعية. بـ 7 لغات.\n• الخطة الأسبوعية: خطوة تدريب على الامتحان مدتها 5 دقائق يوميًا\n• التعلّم من الأخطاء: عودة الموضوعات الخاطئة في سياقات جديدة\n• إتقان الأنماط: تتبع القواعد النحوية ومراجعتها بانتظام\n• التحضير للامتحان: جلسات امتحان مرنة مع أولوية للوحدات الأضعف\n• تقييم الكتابة: استجابة أسرع وأكثر اتساقًا ودقة\n• محتوى سياقي جديد وإصلاح الأخطاء\n</ar>", "sr-Latn": "<sr-Latn>\nKratak ispitni korak i lestvica grešaka u nedeljnom planu. Na 7 jezika.\n• Nedeljni plan: dodat je petominutni ispitni korak u dnevno učenje\n• Lestvica grešaka: netačne teme vraćaju se u novim kontekstima\n• Osvajanje obrazaca: gramatički obrasci se prate i ponavljaju\n• Priprema za ispit: obnovljene sesije; slabiji moduli imaju prednost\n• Ocenjivanje pisanja: brže i doslednije povratne informacije\n• Proširen sadržaj idioma i konteksta, ispravke grešaka\n</sr-Latn>", "ALL": "<tr-TR>\nHaftalık plana kısa sınav adımı ve hata merdiveni geldi. 7 dilde.\n• Haftalık plan: Günlük çalışmaya 5 dakikalık sınav adımı eklendi\n• Hata merdiveni: Yanlış konular yeni bağlamlarda plana geri döner\n• Kalıp ustalığı: Gramer kalıpları artık ölçülüp tekrarlanıyor\n• Sınav hazırlığı: Sınav oturumu yenilendi; zayıf modüller öne alınıyor\n• Yazma değerlendirmesi: Daha hızlı ve tutarlı geri bildirim\n• Zengin deyim ve bağlam içerikleri, hata düzeltmeleri\n</tr-TR>\n\n<en-US>\nA short exam step and mistake ladder joined the weekly plan. In 7 languages.\n• Weekly plan: 5-minute focused exam practice added to daily study\n• Mistake ladder: Past errors return to your plan in fresh contexts\n• Pattern mastery: Grammar patterns are now tracked and reviewed\n• Exam prep: Refreshed exam sessions; weaker modules take priority\n• Writing feedback: More consistent evaluations with lower latency\n• Expanded idiom and context content, bug fixes\n</en-US>\n\n<es-ES>\nPaso de examen corto y escala de errores en el plan semanal. En 7 idiomas.\n• Plan semanal: nuevo paso de examen de 5 minutos al día\n• Aprende de errores: los fallos vuelven al plan en nuevos contextos\n• Dominio de patrones: las estructuras gramaticales se miden y repasan\n• Preparación de examen: sesión renovada; módulos débiles priorizados\n• Redacción: evaluación más rápida, coherente y precisa\n• Nuevas expresiones en contexto y correcciones\n</es-ES>\n\n<ru-RU>\nЭкзаменационный шаг и лестница ошибок в недельном плане. На 7 языках.\n• Недельный план: короткий 5-минутный шаг подготовки к экзамену\n• Лестница ошибок: сложные темы возвращаются в новом контексте\n• Конструкции: грамматические шаблоны отслеживаются и повторяются\n• Экзамен: обновлены сессии; слабые модули выходят на первый план\n• Письмо: более быстрая и согласованная оценка ответов\n• Новые идиомы и контексты, исправление ошибок\n</ru-RU>\n\n<pt-BR>\nPasso de exame curto e escada de erros no plano semanal. Em 7 idiomas.\n• Plano semanal: novo passo de 5 minutos de exame no estudo diário\n• Escada de erros: falhas voltam ao seu plano em novos contextos\n• Domínio de padrões: estruturas gramaticais medidas e revistas\n• Preparação para exame: sessões renovadas; foco em módulos fracos\n• Redação: avaliação mais rápida, coerente e com menor espera\n• Mais expressões em contexto e correções de erros\n</pt-BR>\n\n<ar>\nخطوة امتحان قصير وسلّم لتصحيح الأخطاء في الخطة الأسبوعية. بـ 7 لغات.\n• الخطة الأسبوعية: خطوة تدريب على الامتحان مدتها 5 دقائق يوميًا\n• التعلّم من الأخطاء: عودة الموضوعات الخاطئة في سياقات جديدة\n• إتقان الأنماط: تتبع القواعد النحوية ومراجعتها بانتظام\n• التحضير للامتحان: جلسات امتحان مرنة مع أولوية للوحدات الأضعف\n• تقييم الكتابة: استجابة أسرع وأكثر اتساقًا ودقة\n• محتوى سياقي جديد وإصلاح الأخطاء\n</ar>\n\n<sr-Latn>\nKratak ispitni korak i lestvica grešaka u nedeljnom planu. Na 7 jezika.\n• Nedeljni plan: dodat je petominutni ispitni korak u dnevno učenje\n• Lestvica grešaka: netačne teme vraćaju se u novim kontekstima\n• Osvajanje obrazaca: gramatički obrasci se prate i ponavljaju\n• Priprema za ispit: obnovljene sesije; slabiji moduli imaju prednost\n• Ocenjivanje pisanja: brže i doslednije povratne informacije\n• Proširen sadržaj idioma i konteksta, ispravke grešaka\n</sr-Latn>"};
+    document.querySelectorAll('button[data-lang]').forEach(function (b) {
+      b.addEventListener('click', async function () {
+        const key = b.dataset.lang, text = DATA[key];
+        const hint = document.getElementById('h-' + key) || document.querySelector('.sub');
+        try { await navigator.clipboard.writeText(text); }
+        catch (e) {
+          const ta = document.createElement('textarea');
+          ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+          document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove();
+        }
+        const prev = hint.textContent;
+        hint.textContent = '✔ Kopyalandı' + (key === 'ALL' ? ' (7 dil)' : '');
+        hint.classList.add('ok');
+        setTimeout(function () { hint.textContent = prev; hint.classList.remove('ok'); }, 1800);
+      });
+    });
+  </script>
+</body>
+</html>
